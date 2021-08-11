@@ -13,3 +13,4 @@ fetch("https://api.cloudboxx.invers.com/api/devices/", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
+
