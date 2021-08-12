@@ -67,10 +67,10 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://api.cloudboxx.invers.com/api/devices/494DA49B995A2D02/", requestOptions)
+console.log(fetch("https://api.cloudboxx.invers.com/api/devices/494DA49B995A2D02/", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
-  .catch(error => console.log('error', error));
+  .catch(error => console.log('error', error)));
 
 
   
