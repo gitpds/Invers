@@ -56,7 +56,7 @@ const findStatus = function(qnr) {
 */
 
 
-//Settings Parity with Mac
+
 
 var myHeaders = new Headers();
 myHeaders.append("X-CloudBoxx-ApiKey", "5k0hxNLpkEqhPfql4v8MzNq86q+Xboy4NUalg7lJlerh0iFckIokq9PuZYuBu1Eb");
@@ -67,10 +67,11 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-console.log(fetch("https://api.cloudboxx.invers.com/api/devices/494DA49B995A2D02/", requestOptions)
+fetch("https://api.cloudboxx.invers.com/api/devices/494DA49B995A2D02/", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
-  .catch(error => console.log('error', error)));
+  .catch(error => console.log('error', error));
 
 
-  
+
+  //Settings Parity with Mac
